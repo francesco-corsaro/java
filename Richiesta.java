@@ -2,14 +2,14 @@ import java.util.*;
 import java.io.*  ;
 /*creo un interfeccia per richiedere di quale figura gemetrica si vuole calcolrare il perimetro e l'area. La classe de'interfaccia è come se fosse astratta. le classi contenenti i metodi implementano la classe genitore.*/ 
 
-	interface Richiesta{
+	abstract class Richiesta{
 	public int domanda(); //interfeccia/metodo per chiedere il tipo di figura 
 	public float base(); //interfacia/metodo per chidere le misure dei lati della figura
 	public float altezza();
 }
 
 // classe per richiesta figura che implemtenta Richiesta
-	abstract class Form1 implements Richiesta {
+	 class Form1 extends Richiesta {
 	int x;
 	public int domanda()throws IOException{
 	InputStreamReader input= new InputStreamReader(System.in);
@@ -23,7 +23,7 @@ import java.io.*  ;
 
 //classe per richiesta della base
 
-	abstract class Form2 implements Richiesta{
+	class Form2 extends  Richiesta{
 	float b;
         public float base () throws IOException{
         InputStreamReader input= new InputStreamReader(System.in);
@@ -36,7 +36,7 @@ import java.io.*  ;
 }
 
 //classe per l'altezza
-	abstract class Form3 implements Richiesta{
+	class Form3 extends Richiesta{
         float h;
         public float altezza () throws IOException{
         InputStreamReader input= new InputStreamReader(System.in);
