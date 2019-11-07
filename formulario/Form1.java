@@ -7,7 +7,7 @@
 // classe per richiesta figura che implemtenta Richiesta
 	class Form1 extends Richiesta {
 	int x;
-	protected int domanda()throws IOException{
+	public int domanda()throws IOException{
 	InputStreamReader input= new InputStreamReader(System.in);
         BufferedReader h = new BufferedReader (input) ;             //questo serve a ricevere l'input dalla tastiera e a leggerlo come se fosse una stringa
         System.out.print("Di quale figura vuoi misurare l'area e il perimetro? indica il numero |1 quadrato|2 rombo |3 rettangolo |4 triangolo");               // stampa una scritta sul terminale
