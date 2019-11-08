@@ -9,7 +9,7 @@
        public int domanda()throws IOException{
         InputStreamReader input= new InputStreamReader(System.in);
         BufferedReader h = new BufferedReader (input) ;             //questo serve a ricevere l'input dalla tastiera e a leggerlo come se fosse una stringa
-        System.out.print("Di quale figura vuoi misurare l'area e il perimetro? indica il numero |1 quadrato|2 rombo |3 rettangolo |4 triangolo");               // stampa una scritta sul terminale
+        System.out.print("Di quale figura vuoi misurare l'area e il perimetro? indica il numero |1 quadrato|2 rombo |3 rettangolo |4 triangolo : ");               // stampa una scritta sul terminale
                                                                 // da notare che non è println ma solo print    
         x=Integer.parseInt(h.readLine().trim()); //converto la string in numero 
         return x;
@@ -19,7 +19,7 @@
  	 public  float base() throws IOException{
         InputStreamReader input= new InputStreamReader(System.in);
         BufferedReader h = new BufferedReader (input) ;             //questo serve a ricevere l'input dalla tastiera e a leggerlo come se fosse una stringa
-        System.out.print("Quanto misura la base?");               // stampa una scritta sul terminale
+        System.out.print("Quanto misura la base in cm? =>");               // stampa una scritta sul terminale
                                                                 // da notare che non è println ma solo print    
         b=Float.parseFloat(h.readLine().trim()); //converto la string in numero 
         return b;
@@ -30,7 +30,7 @@
  	public float altezza () throws IOException{
         InputStreamReader input= new InputStreamReader(System.in);
         BufferedReader g = new BufferedReader (input) ;             //questo serve a ricevere l'input dalla tastiera e a leggerlo come se fosse una stringa
-        System.out.print("Quanto misura la base?");               // stampa una scritta sul terminale
+        System.out.print("Quanto misura l'altezza in cm? => ");               // stampa una scritta sul terminale
                                                                 // da notare che non è println ma solo print    
         h=Float.parseFloat(g.readLine().trim()); //converto la string in numero 
         return h;

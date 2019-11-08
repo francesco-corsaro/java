@@ -5,8 +5,17 @@ class Programma{
 		
 	try {
     	 int x=figura.domanda();
-	  System.out.println("il num della figura selezionata è: "+  x);
+	float b=figura.base();
+	float h=figura.altezza();
+	 switch (x){
+		case 1:
+		Quadrato quadratoObj = new Quadrato();
+		float p= quadratoObj.perimetro(b);
+		float a= quadratoObj.area(b);
+		System.out.println(" L'area è di: => " + a +" Il perimetro è di: =>" + p);
+	  }
       } catch (Exception e){
+
 	System.out.println("non gira");
       } 	
 	/*finally{
