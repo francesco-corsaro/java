@@ -1,5 +1,6 @@
-this program calculates area and perimeeter fo a geometric figure.
+This program calculates area and perimeter of a geometric figure.
 to execute it:
+
 javac Proposta.java
 javac Portotipo.java
 javac Quadrato.java
