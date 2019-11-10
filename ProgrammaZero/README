@@ -6,7 +6,7 @@ javac Quadrato.java
 javac Rombo.java
 javac Risposta.java
 javac CalcQuadRett.java
-javac CalcRombo.java
+javac CalcRomboDiag.java
 javac CalcTriangolo.java
 javac Programma.java
 
