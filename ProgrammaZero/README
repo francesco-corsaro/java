@@ -1,0 +1,13 @@
+this program calculates area and perimeeter fo a geometric figure.
+to execute it:
+javac Proposta.java
+javac Portotipo.java
+javac Quadrato.java
+javac Rombo.java
+javac Risposta.java
+javac CalcQuadRett.java
+javac CalcRombo.java
+javac CalcTriangolo.java
+javac Programma.java
+
+java Programma
